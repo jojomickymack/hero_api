@@ -17,12 +17,12 @@ insert into cats(name, color) values ('fluffy', 'white');
   
 # pgsql
 
-create database postgres_database;
-create user postgres_user with password 'postgres_password';
-grant all privileges on postgres_database to postgres_user;
-\c postgres_database;
-create table people(id serial primary key, name text, food text);
-insert into people(name, food) values ('donald', 'pizza');
-grant all privileges on all tables in schema public to postgres_user;
-grant all privileges on all sequences in schema public to postgres_user;
+create database postgres_database;  
+create user postgres_user with password 'postgres_password';  
+grant all privileges on postgres_database to postgres_user;  
+\c postgres_database;  
+create table people(id serial primary key, name text, food text);  
+insert into people(name, food) values ('donald', 'pizza');  
+grant all privileges on all tables in schema public to postgres_user;  
+grant all privileges on all sequences in schema public to postgres_user;  
 
