@@ -1,0 +1,6 @@
+{
+    "name": "jade/proj",
+    "require": {
+        "php-activerecord/php-activerecord": "^1.2"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "mysql": {
+        "host" : "127.0.0.1",
+        "username" : "mysql_user",
+        "password" : "mysql_password"
+    },
+    "postgres": {
+        "host" : "127.0.0.1",
+        "username" : "postgres_user",
+        "password" : "postgres_password"
+    }
+}
