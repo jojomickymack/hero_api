@@ -1,21 +1,21 @@
-#To set up the databases
+# To set up the databases
 
-sudo apt-get install php
-sudo apt-get install php7.0-mysql
-sudo apt-get install mysql-server
-sudo apt-get install postgresql-9.5
-sudo apt-get install php7.0-pgsql
+sudo apt-get install php  
+sudo apt-get install php7.0-mysql  
+sudo apt-get install mysql-server  
+sudo apt-get install postgresql-9.5  
+sudo apt-get install php7.0-pgsql  
 
-mysql
+# mysql  
+  
+create database mysql_database;  
+create user 'mysql_user'@'localhost' identified by 'mysql_password';  
+grant all privileges on mysql_database.* to 'mysql_user'@'localhost';  
 
-create database mysql_database;
-create user 'mysql_user'@'localhost' identified by 'mysql_password';
-grant all privileges on mysql_database.* to 'mysql_user'@'localhost';
-
-create table cats(id int not null auto_increment primary key, name text, color text);
-insert into cats(name, color) values ('fluffy', 'white');
-
-psql
+create table cats(id int not null auto_increment primary key, name text, color text);  
+insert into cats(name, color) values ('fluffy', 'white');  
+  
+# pgsql
 
 create database postgres_database;
 create user postgres_user with password 'postgres_password';
