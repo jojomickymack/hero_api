@@ -1,8 +1,10 @@
 #To set up the databases
 
 sudo apt-get install php
+sudo apt-get install php7.0-mysql
 sudo apt-get install mysql-server
 sudo apt-get install postgresql-9.5
+sudo apt-get install php7.0-pgsql
 
 mysql
 
